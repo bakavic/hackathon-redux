@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @bid_summary.id %>
+</p>
+
+<p>
+  <b>Return student:</b>
+  <%= @bid_summary.return_student %>
+</p>
+
+<p>
+  <b>New student:</b>
+  <%= @bid_summary.new_student %>
+</p>
+
+<p>
+  <b>Open all:</b>
+  <%= @bid_summary.open_all %>
+</p>
+
+<p>
+  <b>Faculty:</b>
+  <%= @bid_summary.faculty %>
+</p>
+
+<p>
+  <b>Quota:</b>
+  <%= @bid_summary.quota %>
+</p>
+
+<p>
+  <b>Bidders:</b>
+  <%= @bid_summary.bidders %>
+</p>
+
+<p>
+  <b>Lowest bid:</b>
+  <%= @bid_summary.lowest_bid %>
+</p>
+
+<p>
+  <b>Highest bid:</b>
+  <%= @bid_summary.highest_bid %>
+</p>
+
+<p>
+  <b>Winning bid:</b>
+  <%= @bid_summary.winning_bid %>
+</p>
+
+<p>
+  <b>Academic year:</b>
+  <%= @bid_summary.academic_year %>
+</p>
+
+<p>
+  <b>Round:</b>
+  <%= @bid_summary.round %>
+</p>
+
+<p>
+  <b>Lecture group:</b>
+  <%= @bid_summary.lecture_group %>
+</p>
+
+
+<%= link_to 'Edit', edit_bid_summary_path(@bid_summary) %> |
+<%= link_to 'Back', bid_summaries_path %>

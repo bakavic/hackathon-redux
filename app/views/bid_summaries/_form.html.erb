@@ -1,0 +1,69 @@
+<%= form_for(@bid_summary) do |f| %>
+  <% if @bid_summary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bid_summary.errors.count, "error") %> prohibited this bid_summary from being saved:</h2>
+
+      <ul>
+      <% @bid_summary.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :return_student %><br />
+    <%= f.check_box :return_student %>
+  </div>
+  <div class="field">
+    <%= f.label :new_student %><br />
+    <%= f.check_box :new_student %>
+  </div>
+  <div class="field">
+    <%= f.label :open_all %><br />
+    <%= f.check_box :open_all %>
+  </div>
+  <div class="field">
+    <%= f.label :faculty %><br />
+    <%= f.text_field :faculty %>
+  </div>
+  <div class="field">
+    <%= f.label :quota %><br />
+    <%= f.text_field :quota %>
+  </div>
+  <div class="field">
+    <%= f.label :bidders %><br />
+    <%= f.text_field :bidders %>
+  </div>
+  <div class="field">
+    <%= f.label :lowest_bid %><br />
+    <%= f.text_field :lowest_bid %>
+  </div>
+  <div class="field">
+    <%= f.label :highest_bid %><br />
+    <%= f.text_field :highest_bid %>
+  </div>
+  <div class="field">
+    <%= f.label :winning_bid %><br />
+    <%= f.text_field :winning_bid %>
+  </div>
+  <div class="field">
+    <%= f.label :academic_year %><br />
+    <%= f.text_field :academic_year %>
+  </div>
+  <div class="field">
+    <%= f.label :round %><br />
+    <%= f.text_field :round %>
+  </div>
+  <div class="field">
+    <%= f.label :lecture_group %><br />
+    <%= f.text_field :lecture_group %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

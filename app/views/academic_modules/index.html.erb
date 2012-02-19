@@ -1,0 +1,27 @@
+<h1>Listing academic_modules</h1>
+
+<table>
+  <tr>
+    <th>Module code</th>
+    <th>Module name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @academic_modules.each do |academic_module| %>
+  <tr>
+    <td><%= academic_module.module_code %></td>
+    <td><%= academic_module.module_name %></td>
+    <td><%= academic_module.description %></td>
+    <td><%= link_to 'Show', academic_module %></td>
+    <td><%= link_to 'Edit', edit_academic_module_path(academic_module) %></td>
+    <td><%= link_to 'Destroy', academic_module, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Academic module', new_academic_module_path %>

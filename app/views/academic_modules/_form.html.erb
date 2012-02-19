@@ -1,0 +1,29 @@
+<%= form_for(@academic_module) do |f| %>
+  <% if @academic_module.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@academic_module.errors.count, "error") %> prohibited this academic_module from being saved:</h2>
+
+      <ul>
+      <% @academic_module.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :module_code %><br />
+    <%= f.text_field :module_code %>
+  </div>
+  <div class="field">
+    <%= f.label :module_name %><br />
+    <%= f.text_field :module_name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

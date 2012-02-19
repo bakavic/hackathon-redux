@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 
+  return_student: false
+  new_student: false
+  open_all: false
+  faculty: 
+  quota: 1
+  bidders: 1
+  lowest_bid: 1
+  highest_bid: 1
+  winning_bid: 1
+  academic_year: MyString
+  round: MyString
+  lecture_group: MyString
+
+two:
+  id: 
+  return_student: false
+  new_student: false
+  open_all: false
+  faculty: 
+  quota: 1
+  bidders: 1
+  lowest_bid: 1
+  highest_bid: 1
+  winning_bid: 1
+  academic_year: MyString
+  round: MyString
+  lecture_group: MyString

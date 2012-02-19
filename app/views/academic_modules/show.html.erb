@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Module code:</b>
+  <%= @academic_module.module_code %>
+</p>
+
+<p>
+  <b>Module name:</b>
+  <%= @academic_module.module_name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @academic_module.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_academic_module_path(@academic_module) %> |
+<%= link_to 'Back', academic_modules_path %>
